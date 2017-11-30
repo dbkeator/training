@@ -11,6 +11,3 @@ filestem=os.path.splitext(os.path.splitext(filename)[0])[0]
 #extract brain
 bet = fsl.BET()
 bet.run(in_file=filename, out_file=filestem+"_brain.nii.gz", frac=0.8, mask=True)
-bet.run(in_file=filename, out_file=filestem+"_brain.nii.gz", frac=0.1, mask=True)
-bet.run(in_file=filename, out_file=filestem+"_brain.nii.gz", frac=0.2, mask=True)
-bet.run(in_file=filename, out_file=filestem+"_brain.nii.gz", frac=0.3, mask=True)
